@@ -1,7 +1,7 @@
 <script>
     import "../app.css";
 </script>
-
+<div class="lg:w-content w-full mx-auto p-8 sm:px-6">
 <header>
     <div class="container flex justify-between">
         <a href="/">
@@ -48,3 +48,4 @@
       </a>
     </div>
   </footer>
+</div>

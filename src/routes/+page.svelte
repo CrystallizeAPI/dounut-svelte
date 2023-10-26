@@ -11,12 +11,7 @@
 
 <div class="py-20">
     <div
-      class="bg-background5 z-0 absolute left-0 right-0 bottom-0 rounded-tl-full rounded-tr-full"
-      style={{
-        top: "45%",
-        zIndex: "-1",
-      }}
-    ></div>
+      class="bg-background5 z-0 absolute left-0 right-0 bottom-0 rounded-tl-full rounded-tr-full"></div>
     {#each $FrontPageGrid.data.grid.rows as row}
         <div>
             {#each row.columns as col}
