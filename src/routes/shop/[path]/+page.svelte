@@ -7,10 +7,8 @@
     $: product = $ProductData.data.product
 
     $: ProductData, console.log(ProductData);
+
 </script>
-
-{$page.params.slug}
-
 
 <div>
     <h1 class="text-2xl font-bold">{product.name}</h1>
@@ -30,7 +28,7 @@
     <div>
         {#if product.body.content}
             {#each product.body.content.paragraphs as paragraph}
-                <h2 class="text-xl font-bold">{paragraph.title.text}</h2>
+                <h2 class="text-xl font-bold">{paragraph.title?.text}</h2>
                 <div>{@html paragraph.body.html}</div>
                 
                 {#if paragraph.images}
