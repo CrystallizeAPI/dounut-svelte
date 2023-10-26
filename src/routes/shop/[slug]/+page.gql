@@ -1,0 +1,57 @@
+query ProductData{
+  product:catalogue(language: "en", path: "/shop/triple-trouble-family-box") {
+    name
+    url: path
+    topics{
+      name
+    }
+    ... on Product {
+      defaultVariant {
+        price
+        stock
+        firstImage {
+          url
+        }
+      }
+    }
+    brief:component(id: "brief") {
+      content {
+        ... on RichTextContent {
+          html
+        }
+      }
+    }
+    nutrition:component(id: "nutrition") {
+      content {
+        ... on PropertiesTableContent{
+          sections{
+            title
+            properties{
+              key
+              value
+            }
+          }
+        }
+      }
+    }
+    body:component(id: "body") {
+      content {
+        ... on ParagraphCollectionContent {
+        	paragraphs{
+            title{
+              text
+            }
+            body{
+              html
+            }
+            images{
+              url
+              height
+              height
+            }
+          }
+        }
+      }
+    }
+  }
+}
