@@ -4,6 +4,11 @@
     $: ({ FrontPageGrid } = data);
 </script>
 
+<svelte:head>
+	<title>Crystallize SvelteKit demo</title>
+	<meta name="description" content="Crystallize demo with SvelteKit, Houdini and Tailwind." />
+</svelte:head>
+
 {#if !$FrontPageGrid.fetching}
 <div class="py-20">
     <div class="bg-background5 z-0 absolute left-0 right-0 bottom-0 rounded-tl-full rounded-tr-full"></div>

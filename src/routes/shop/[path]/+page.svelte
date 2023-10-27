@@ -5,6 +5,11 @@
     $: product = $ProductData.data?.product;
 </script>
 
+<svelte:head>
+	<title>{product?.name}</title>
+	<meta name="description" content="Crystallize demo with SvelteKit, Houdini and Tailwind." />
+</svelte:head>
+
 {#if product}
 <div class="lg:w-content w-full mx-auto p-8 sm:px-6">
     <div class="left-0 right-0 rounded-full  top-[20%]"></div>
