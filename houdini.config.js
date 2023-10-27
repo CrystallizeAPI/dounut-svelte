@@ -8,8 +8,7 @@ const config = {
     "plugins": {
         "houdini-svelte": {}
     },
-    defaultKeys: [],
-    logLevel: "full"
+    defaultKeys: []
 }
 
 export default config

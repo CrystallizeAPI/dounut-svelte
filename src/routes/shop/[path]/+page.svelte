@@ -1,18 +1,13 @@
 <script lang="ts">
-    import { page } from '$app/stores'
-
     /* @type { import('./$houdini').PageData } */
     export let data
     $: ({ ProductData } = data)
-    $: product = $ProductData.data.product
-
-    $: ProductData, console.log(ProductData);
-
+    $: product = $ProductData.data?.product;
 </script>
 
+{#if product}
 <div class="lg:w-content w-full mx-auto p-8 sm:px-6">
-    <div
-        class="left-0 right-0 rounded-full  top-[20%]"></div>
+    <div class="left-0 right-0 rounded-full  top-[20%]"></div>
 
       <div class="py-5">
         <div class="flex lg:flex-row flex-col items-center mt-10 mb-5">
@@ -50,7 +45,7 @@
                                 <img class="w-full rounded-xl overflow-hidden" alt={image.altText} src={image.url} />
                             {/each}
                         </div>
-                        {/if}        
+                        {/if}
                     {/each}
                 {/if}
                 </div>
@@ -73,14 +68,7 @@
                     {/each}
                 {/if}        
             </div>
-            <p class="text-text mb-4 font-semibold">Related do(u)nuts</p>
       </div>
-        RELATED PRODUCTS HERE
-        
     </div>
 </div>
-
-    <hr />
-<pre>
-    {JSON.stringify($ProductData, null, 2)}
-</pre>
+{/if}

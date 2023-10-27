@@ -63,11 +63,8 @@ query ProductData( $path: String! ){
   
 `)
 
-
 /* @type { import('./$houdini').ProductDataVariables } */
 export const _ProductDataVariables = (event) => {
-
-    console.log( event )
     return {
         path: event.url.pathname,
     }
