@@ -1,22 +1,18 @@
-# create-svelte
+# SvelteKit Crystallize boilerplate
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+The product storytelling boilerplate is a minimal eCommerce boilerplate built using SvelteKit, Houdini, Tailwind and Crystallize. You can also check out the [live demo](https://dounut-svelte.vercel.app/) of this boilerplate.
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Getting started
+
+To get started clone this [GitHub repository](https://github.com/CrystallizeAPI/dounut-svelte). Then install the required packages by running the following command:
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+npm install
 ```
+## Running the project
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Running the project locally in development mode is done by running following command. Optionally the second if you want to open the browser the with the App directly.
 
 ```bash
 npm run dev
@@ -25,14 +21,6 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+## Deploying
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+The simplest way to deploy is to use Vercel.
