@@ -2,13 +2,13 @@
 
 /** @type {import('houdini').ConfigFile} */
 const config = {
-    "watchSchema": {
-        "url": "https://api.crystallize.com/dounot/catalogue"
+    watchSchema: {
+        url: "https://api.crystallize.com/dounot/catalogue",
     },
-    "plugins": {
-        "houdini-svelte": {}
+    plugins: {
+        "houdini-svelte": {},
     },
-    defaultKeys: []
-}
+    defaultKeys: [],
+};
 
-export default config
+export default config;

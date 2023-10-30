@@ -1,7 +1,7 @@
-import { HoudiniClient } from '$houdini';
+import { HoudiniClient } from "$houdini";
 
 export default new HoudiniClient({
-    url: 'https://api.crystallize.com/dounot/catalogue'
+    url: "https://api.crystallize.com/dounot/catalogue",
 
     // uncomment this to configure the network call (for things like authentication)
     // for more information, please visit here: https://www.houdinigraphql.com/guides/authentication
@@ -12,4 +12,4 @@ export default new HoudiniClient({
     //         }
     //     }
     // }
-})
+});
