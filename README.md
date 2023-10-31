@@ -8,6 +8,8 @@ The product storytelling boilerplate is a minimal eCommerce boilerplate built us
 To get started clone this [GitHub repository](https://github.com/CrystallizeAPI/dounut-svelte). Then install the required packages by running the following command:
 
 ```bash
+git clone https://github.com/CrystallizeAPI/dounut-svelte
+
 npm install
 ```
 ## Running the project
@@ -23,4 +25,8 @@ npm run dev -- --open
 
 ## Deploying
 
-The simplest way to deploy is to use Vercel.
+The simplest way to deploy is to use Vercel. Just connect your GitHub repo to Vercel and deployments are happening automatically on every push.
+
+## Further reading
+
+Check out the blogpost for a bit more details on the boilerplate.
